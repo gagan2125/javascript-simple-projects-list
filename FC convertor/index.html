@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      input[type="number"] {
+        width: calc(100% - 100px);
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+
+      select,
+      button {
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 18px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Temperature Converter</h1>
+      <input
+        type="number"
+        id="temperatureInput"
+        placeholder="Enter temperature..."
+      />
+      <select id="unitSelect">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+      </select>
+      <button onclick="convertTemperature()">Convert</button>
+      <p id="result"></p>
+    </div>
+    <script src="fc-convertor.js"></script>
+  </body>
+</html>
