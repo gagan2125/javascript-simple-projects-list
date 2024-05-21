@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calorie Counter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calorie Counter</h1>
+      <form id="calorie-form">
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input type="text" id="age" name="age" required />
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="">Select...</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="weight">Weight (kg):</label>
+          <input type="text" id="weight" name="weight" required />
+        </div>
+        <div class="form-group">
+          <label for="height">Height (cm):</label>
+          <input type="text" id="height" name="height" required />
+        </div>
+        <div class="form-group">
+          <label for="activity">Activity Level:</label>
+          <select id="activity" name="activity" required>
+            <option value="">Select...</option>
+            <option value="1.2">Sedentary</option>
+            <option value="1.375">Lightly active</option>
+            <option value="1.55">Moderately active</option>
+            <option value="1.725">Very active</option>
+            <option value="1.9">Super active</option>
+          </select>
+        </div>
+        <button type="submit">Calculate</button>
+      </form>
+      <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
