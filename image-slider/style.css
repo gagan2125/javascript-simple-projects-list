@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.slider-container {
+    position: relative;
+    width: 600px;
+    max-width: 100%;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+}
+
+.slide.active {
+    display: block;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#prev-btn {
+    left: 10px;
+}
+
+#next-btn {
+    right: 10px;
+}
